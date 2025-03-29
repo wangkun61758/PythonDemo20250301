@@ -1,15 +1,16 @@
 [
   {
-    "parent_id": "PAR_gf1p4P",
-    "children": [
-      {
-        "child_id": "CH_cyIT",
-        "value": 38.32
-      },
-      {
-        "child_id": "CH_Kn0P",
-        "value": 7.38
-      }
-    ]
+    "id": "ca611ea5-bbc1-472f-b3eb-09b66e72ddca",
+    "name": "Sean Williams",
+    "email": "gillespiekimberly@example.com",
+    "birthdate": "2024-12-11",
+    "address": {
+      "street": "509 Taylor Extensions Suite 641",
+      "city": "South Jamesland",
+      "zipcode": "83241"
+    },
+    "phone": "297.312.1842x344",
+    "created_at": "2025-03-23",
+    "is_active": false
   }
 ]

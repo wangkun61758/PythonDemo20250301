@@ -1,0 +1,16 @@
+[
+  {
+    "id": "7afb0cfb-c1d7-460e-bf39-5c5a81bcafcd",
+    "name": "Erica Williams",
+    "email": "robert21@example.com",
+    "birthdate": "2024-08-24",
+    "address": {
+      "street": "9372 Adams Tunnel Apt. 846",
+      "city": "East Erin",
+      "zipcode": "89550"
+    },
+    "phone": "4849456889",
+    "created_at": "2024-07-20",
+    "is_active": true
+  }
+]

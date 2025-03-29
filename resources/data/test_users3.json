@@ -1,0 +1,16 @@
+[
+  {
+    "id": "7837f6b5-134d-444d-8e1e-d61cb5ca8233",
+    "name": "Kathryn Torres",
+    "email": "xweber@example.com",
+    "birthdate": "2024-05-23",
+    "address": {
+      "street": "0983 Nunez Ramp",
+      "city": "Ericchester",
+      "zipcode": "15296"
+    },
+    "phone": "276.282.0587",
+    "created_at": "2024-09-03",
+    "is_active": false
+  }
+]
