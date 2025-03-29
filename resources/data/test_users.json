@@ -1,0 +1,16 @@
+[
+  {
+    "id": "fe3a167d-a133-4851-9394-a8654cf7e611",
+    "name": "Nicholas Steele",
+    "email": "vweber@example.com",
+    "birthdate": "2024-05-22",
+    "address": {
+      "street": "26094 Weaver Drive Suite 978",
+      "city": "Thompsonland",
+      "zipcode": "12307"
+    },
+    "phone": "563-651-1827x3051",
+    "created_at": "2025-03-27T15:18:05.329766",
+    "is_active": false
+  }
+]

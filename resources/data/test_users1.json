@@ -1,0 +1,16 @@
+[
+  {
+    "id": "0fe6f053-3e92-40e2-831c-7193a205eace",
+    "name": "Alice Patel",
+    "email": "hvaldez@example.org",
+    "birthdate": "2024-05-27",
+    "address": {
+      "street": "18478 Bryan Extension",
+      "city": "North Brandon",
+      "zipcode": "23772"
+    },
+    "phone": "(840)776-8343",
+    "created_at": "2025-03-27T15:25:15.040084",
+    "is_active": false
+  }
+]

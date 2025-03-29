@@ -1,0 +1,5 @@
+2025-02-11 22:16:38,216-MainThread-case8（打印log日志）.py-[line:42]-DEBUG: 读取到的token：PHPSESSID=htvoegt7rgb27fadl6d22calic
+2025-02-11 22:16:38,216-MainThread-case8（打印log日志）.py-[line:44]-INFO: 读取到的token：PHPSESSID=htvoegt7rgb27fadl6d22calic
+2025-02-11 22:16:38,216-MainThread-case8（打印log日志）.py-[line:45]-WARNING: 读取到的token：PHPSESSID=htvoegt7rgb27fadl6d22calic
+2025-02-11 22:16:38,216-MainThread-case8（打印log日志）.py-[line:46]-ERROR: 读取到的token：PHPSESSID=htvoegt7rgb27fadl6d22calic
+2025-02-11 22:16:38,216-MainThread-case8（打印log日志）.py-[line:47]-CRITICAL: 读取到的token：PHPSESSID=htvoegt7rgb27fadl6d22calic

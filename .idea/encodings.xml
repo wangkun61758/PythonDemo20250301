@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/case1（指定执行顺序）.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/cases" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/cases/case303（三方库3：pillow）-练习2：保存链接图片）.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/resources/data/order.yaml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/data/order1.yaml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/reports/20240301-22-59-04.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/yaml/file.yaml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/yaml/station.yaml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/test_cases/Test1.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case29-2（unittest+TestRunner-执行多文件夹）/case49.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case29-2（unittest+TestRunner-执行多文件夹）/tests/acc.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case29-2（unittest+TestRunner-执行多文件夹）/tests/test1/acc.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case29-2（unittest+TestRunner-执行多文件夹）/tests/test1/add.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case29-2（unittest+TestRunner-执行多文件夹）/tests/test1/adffd.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case29-2（unittest+TestRunner-执行多文件夹）/tests/test1/hhh/ahhh.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case29-2（unittest+TestRunner-执行多文件夹）/tests/test1/hhh/ahhhhhhhhhhhhhhhhh.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case29-2（unittest+TestRunner-执行多文件夹）/tests/test2/acc.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case29-2（unittest+TestRunner-执行多文件夹）/tests/test2/add.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case29-2（unittest+TestRunner-执行多文件夹）/tests/test3/acc.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case29-2（unittest+TestRunner-执行多文件夹）/tests/test3/add.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case32/SendEmail.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case32/case48（测试报告）.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/test_cases/case32/testFile/acc.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case32/testFile/add.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case43-4（淘宝爬取好评图片）.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case44（淘宝）.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case50/case50.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case50/tests/abc.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case50/tests/acc.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case50/tests/test1/acc.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case50/tests/test1/add.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case50/tests/test2/acc.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case50/tests/test2/add.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case50/tests/test3/acc.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case50/tests/test3/add.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case509-4（爬取搜索页商品主图）/case90-2（淘宝爬取好评图片）.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case509-4（爬取搜索页商品主图）/case90（淘宝爬取好评图片）.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case509-4（爬取搜索页商品主图）/case90（爬取视频和图片）.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case515（综合练习）/acc.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/case515（综合练习）/add.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/cases/case303（三方库3：pillow）-练习2：保存链接图片）.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_cases/public_function" charset="GBK" />
+  </component>
+</project>
