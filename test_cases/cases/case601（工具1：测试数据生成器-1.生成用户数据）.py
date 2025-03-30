@@ -192,5 +192,3 @@ if __name__ == '__main__':
     data4=userdata4.user(1)
     userdata4.export(data4,'../../resources/data/test_users4.json')
 
-def test():
-    print('1')
