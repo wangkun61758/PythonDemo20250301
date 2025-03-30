@@ -55,8 +55,8 @@ from faker import Faker  # 需要安装：pip install Faker
 #     # 导出数据
 #     generator.export_to_json(users, '../../resources/data/test_users.json')
 
-class TestData:
-    def __init__(self,locale='en_US',seed=None):
+class UserData1:
+    def __init__(self,locale='en_US'):
         self.fake=Faker(locale)
     def email(self,domain=None):
         return self.fake.email(domain=domain)
@@ -85,8 +85,112 @@ class TestData:
     def export(self,data,filename):
         with open(filename, 'w', encoding='utf-8') as file1:
             json.dump(data,file1,indent=2, ensure_ascii=False)
-
 if __name__ == '__main__':
-    testData = TestData(seed=42)
-    users=testData.user(1)
-    testData.export(users,'../../resources/data/test_users1.json')
+    userdata1 = UserData1()
+    data1=userdata1.user(1)
+    userdata1.export(data1,'../../resources/data/test_users1.json')
+'''
+练习：2025/3/20（3）
+'''
+class UserData2:
+    def __init__(self,locale='en_US'):
+        self.fake=Faker(locale)
+    def email(self,domain=None):
+        return self.fake.email(domain=None)
+    def date(self,date_format='%Y-%m-%d'):
+        return self.fake.date_between_dates(date_start=datetime.now()-timedelta(days=365),date_end=datetime.now()).strftime(date_format)
+    def user(self,count):
+        users=[]
+        for _ in range(count):
+            users.append(
+                {"id":self.fake.uuid4(),
+                 'name':self.fake.name(),
+                 'email':self.fake.email(),
+                 'birthdate':self.date(),
+                 'address':{
+                     'street':self.fake.street_address(),
+                     'city':self.fake.city(),
+                     'zipcode':self.fake.postcode()
+                 },
+                 'phone':self.fake.phone_number(),
+                 'created_at':self.date(),
+                 'is_active':random.choice([True,False])}
+            )
+        return users
+    def export(self,user_data,filename):
+        with open(filename,'w', encoding='utf-8') as file1:
+            json.dump(user_data,file1,indent=2,ensure_ascii=False)
+if __name__ == '__main__':
+    userdata2=UserData2()
+    data2=userdata2.user(1)
+    userdata2.export(data2,'../../resources/data/test_users2.json')
+
+class UserData3:
+    def __init__(self, locale='en_US'):
+        self.fake = Faker(locale)
+    def email(self, domain='163.com'):
+        return self.fake.email(domain=domain)
+    def date(self, date_format='%Y-%m-%d'):
+        return self.fake.date_between_dates(date_start=datetime.now() - timedelta(days=365),
+                                            date_end=datetime.now()).strftime(date_format)
+    def user(self, count):
+        users = []
+        for _ in range(count):
+            users.append({
+                "id": self.fake.uuid4(),
+                'name': self.fake.name(),
+                'email': self.fake.email(),
+                'birthdate': self.date(),
+                'address': {
+                    'street': self.fake.street_address(),
+                    'city': self.fake.city(),
+                    'zipcode': self.fake.postcode()
+                },
+                'phone': self.fake.phone_number(),
+                'created_at': self.date(),
+                'is_active': random.choice([True, False])
+            })
+        return users
+    def export(self, user_data, filename):
+        with open(filename, 'w', encoding='utf-8') as file1:
+            json.dump(user_data, file1, indent=2, ensure_ascii=False)
+if __name__ == '__main__':
+    userdata3=UserData3()
+    data3=userdata3.user(1)
+    userdata3.export(data3,'../../resources/data/test_users3.json')
+
+class UserData4:
+    def __init__(self,locale='en_US'):
+        self.fake=Faker(locale)
+    def email(self,domain='163.com'):
+        return self.fake.email(domain=domain)
+    def date(self,date_format='%Y-%m-%d'):
+        return self.fake.date_between_dates(date_start=datetime.now()-timedelta(days=365),date_end=datetime.now()).strftime(date_format)
+    def user(self,count):
+        users=[]
+        for _ in range(count):
+            users.append({
+                "id":self.fake.uuid4(),
+                'name':self.fake.name(),
+                'email':self.fake.email(),
+                'birthdate':self.date(),
+                'address':{
+                    'street':self.fake.street_address(),
+                    'city':self.fake.city(),
+                    'zipcode':self.fake.postcode()
+                },
+                'phone': self.fake.phone_number(),
+                'created_at':self.date(),
+                'is_active':random.choice([True,False])
+            })
+        return users
+    def export(self,user_data,filename):
+        with open(filename,'w', encoding='utf-8') as file1:
+            json.dump(user_data,file1,indent=2,ensure_ascii=False)
+if __name__ == '__main__':
+    userdata4=UserData4()
+    data4=userdata4.user(1)
+    userdata4.export(data4,'../../resources/data/test_users4.json')
+
+def test():
+    print('1')
