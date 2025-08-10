@@ -16,6 +16,7 @@ from datetime import datetime, timedelta, date
 import unittest
 from unittestreport import TestRunner
 import time
+
 '''
 1、要想执行到相关测试脚本（否则测试报告中执行到的测试脚本会为空），测试脚本要放到类中，且这个类要传入参数“unittest.TestCase”，同时调用unittest执行main函数类似于：
 class c(unittest.TestCase):
@@ -23,6 +24,8 @@ class c(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 '''
+
+
 class Email:
     def __init__(self, host, port, user, password):
         self.smtp = smtplib.SMTP()  # 创建 SMTP 对象
@@ -30,6 +33,7 @@ class Email:
         self.user = user  # user：自己邮箱账户名
         self.password = password  # password：自己邮箱账户的密码（注意是授权码，不是邮箱官网的登录密码）
         self.smtp.login(user=self.user, password=self.password)  # ‘SMTP对象’登录自己邮箱账号
+
     def send(self, From, To, Subject, Context, to_addrs, path):
         message = MIMEMultipart()  # 初始化邮件对象
         message['From'] = Header(From)
@@ -45,24 +49,27 @@ class Email:
         encoders.encode_base64(minebase)  # 编码附件为base64
         minebase.add_header('Content-Disposition', f"attachment; filename= {path}")  # 添加头信息
         message.attach(minebase)  # 将附件添加到邮件中
-        self.smtp.sendmail(from_addr=self.user, to_addrs=to_addrs,msg=message.as_string())
+        self.smtp.sendmail(from_addr=self.user, to_addrs=to_addrs, msg=message.as_string())
+
 
 def suite():
     suite = unittest.TestSuite()
-    cases=unittest.defaultTestLoader.discover('../case515（综合练习）', pattern='Test1.py', top_level_dir=None)
+    cases = unittest.defaultTestLoader.discover('../case515（综合练习）', pattern='test_login.py', top_level_dir=None)
     suite.addTest(cases)
     return suite
 
+
 if __name__ == '__main__':
-    unit=suite()
+    unit = suite()
     now = datetime.now()
-    time1 = now.strftime("%Y%m%d%H%M%S")#报告的文件名中不能出现“-”和“：”
+    time1 = now.strftime("%Y%m%d%H%M%S")  # 报告的文件名中不能出现“-”和“：”
     filename1 = time1 + '.html'
-    path1=os.path.join('../../resources/reports/', filename1)
-    runner = TestRunner(unit, filename=filename1, report_dir='../../resources/reports', title='测试报告', tester='wk', desc='自动化测试')
+    path1 = os.path.join('../../resources/reports/', filename1)
+    runner = TestRunner(unit, filename=filename1, report_dir='../../resources/reports', title='测试报告', tester='wk',
+                        desc='自动化测试')
     runner.run()
     time.sleep(5)
 
     email = Email(host="smtp.163.com", port=25, user="18325961727@163.com", password="HVtbqZRrxFCDwNUc")
     email.send(From="发送者昵称", To="接收人昵称", Subject="邮件主题", Context="邮件正文",
-             to_addrs="18210958030@163.com",path=path1)
+               to_addrs="18210958030@163.com", path=path1)

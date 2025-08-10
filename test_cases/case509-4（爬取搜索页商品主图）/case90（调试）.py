@@ -31,4 +31,3 @@ def test():
     response = requests.get(url, headers=headers, params=payload)
     # 访问好评的返回值
     print('访问好评的返回值:' + response.text)
-

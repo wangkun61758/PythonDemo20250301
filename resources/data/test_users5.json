@@ -1,0 +1,16 @@
+[
+  {
+    "id": "dc8ab99c-f682-4596-85c0-56072c0982c2",
+    "name": "Paula Lee",
+    "email": "mark94@example.net",
+    "birthdate": "2025-04-26",
+    "address": {
+      "street": "417 Mahoney Bypass",
+      "city": "Ronaldmouth",
+      "zipcode": "39132"
+    },
+    "phone": "6188103187",
+    "created_at": "2024-10-28",
+    "is_active": true
+  }
+]

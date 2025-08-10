@@ -1,16 +1,16 @@
 [
   {
-    "id": "7afb0cfb-c1d7-460e-bf39-5c5a81bcafcd",
-    "name": "Erica Williams",
-    "email": "robert21@example.com",
-    "birthdate": "2024-08-24",
+    "id": "fe24fe2d-92bd-4e75-ac50-2072397eced2",
+    "name": "Janice Morrison",
+    "email": "stevenmeyer@example.org",
+    "birthdate": "2024-05-24",
     "address": {
-      "street": "9372 Adams Tunnel Apt. 846",
-      "city": "East Erin",
-      "zipcode": "89550"
+      "street": "49892 Carlos Inlet Suite 950",
+      "city": "Lake Jonathan",
+      "zipcode": "36507"
     },
-    "phone": "4849456889",
-    "created_at": "2024-07-20",
-    "is_active": true
+    "phone": "+1-908-582-6599",
+    "created_at": "2025-04-07",
+    "is_active": false
   }
 ]

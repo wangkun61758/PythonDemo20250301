@@ -8,6 +8,7 @@
 import os.path
 import shutil
 
+
 def test1():
     list_dirs = os.listdir('../../resources/')
     for i in list_dirs:
@@ -22,15 +23,4 @@ def test1():
             pass
             # print('是文件不删除')
 
-def test2(paths):
-    list_dirs = os.listdir(paths)
-    for i in list_dirs:
-        path= os.path.join('paths', i)
-        print(path)
-        if os.path.isdir(path):
-            if 'o' in path:
-                shutil.rmtree(path, ignore_errors=False)
-        else:
-            os.path.isfile(path)
-            print('是文件不删除')
-test2('../reso')
+

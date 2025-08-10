@@ -6,9 +6,12 @@
 @Date   ：2023/10/18 20:43
 =================================================='''
 import openpyxl
+
 '''
 1、导入对应的库 —— openpyxl
 '''
+
+
 def test1():
     try:
         '''
@@ -33,6 +36,8 @@ def test1():
 
     except OSError as e:
         print("无效的 Excel 文件:", str(e))
+
+
 def test2():
     file = openpyxl.load_workbook('../../resources/data1.xlsx')
     sheet = file['妈妈用品']
@@ -51,6 +56,8 @@ def test2():
                 column_index = cell.column
                 # 输出结果
                 print("目标值所在的行和列分别为：", row_index, column_index)  # 11 3
+
+
 def test3():
     file1 = openpyxl.load_workbook('../../resources/data1.xlsx')
     sheet1 = file1['妈妈用品']
@@ -85,6 +92,8 @@ None
 None
 
     '''
+
+
 def test4():
     file1 = openpyxl.load_workbook('../../resources/data1.xlsx')
     sheet1 = file1['妈妈用品']
@@ -122,6 +131,8 @@ None	None	None	None	None	None
 None	None	None	None	None	None
 None	None	None	None	None	None
     '''
+
+
 def test5():
     file1 = openpyxl.load_workbook('../../resources/data1.xlsx')
     sheet = file1['妈妈用品']

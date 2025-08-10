@@ -12,6 +12,8 @@ import unittest
 
 import yaml
 import jsonpath
+
+
 class c(unittest.TestCase):
     def test1(self):
         json_data = '''
@@ -87,6 +89,7 @@ class c(unittest.TestCase):
         b = json.dumps(dict1, ensure_ascii=False)
         c = re.findall(r'(.*)author(.*?)', b, re.M | re.I)
         print('c' + str(c))
+
 
 if __name__ == '__main__':
     unittest.main()

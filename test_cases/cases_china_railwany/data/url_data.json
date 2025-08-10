@@ -1,0 +1,16 @@
+{
+    "cases": [
+        {
+            "leftTicketDTO.train_date": "2025-08-12",
+            "leftTicketDTO.from_station": "BJP",
+            "leftTicketDTO.to_station": "SHH",
+            "purpose_codes": "ADULT"
+        },
+        {
+            "leftTicketDTO.train_date": "2025-08-12",
+            "leftTicketDTO.from_station": "BJP",
+            "leftTicketDTO.to_station": "SHH",
+            "purpose_codes": "ADULT"
+        }
+    ]
+}

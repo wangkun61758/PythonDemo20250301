@@ -1,0 +1,64 @@
+{
+  "cases": [
+    {
+      "id": "case_001",
+      "name": "查询车票-成功场景",
+      "interface": "/otn/leftTicket/queryG",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "Accept-Language": "zh-CN,zh;q=0.9",
+        "Cache-Control": "no-cache",
+        "Connection": "keep-alive",
+        "Cookie": "_uab_collina=174369461802026954310813; JSESSIONID=F11C5671B4C0B677E5BCD873C91EF4B4; BIGipServerotn=1574502666.24610.0000; BIGipServerpassport=803733770.50215.0000; guidesStatus=off; highContrastMode=defaltMode; cursorStatus=off; route=6f50b51faa11b987e576cdb301e545c4; _jc_save_fromStation=%u5317%u4EAC%2CBJP; _jc_save_toStation=%u5408%u80A5%2CHFH; _jc_save_fromDate=2025-04-12; _jc_save_toDate=2025-04-03; _jc_save_wfdc_flag=dc",
+        "If-Modified-Since": "0",
+        "Referer": "https://kyfw.12306.cn/otn/leftTicket/init?linktypeid=dc&fs=%E5%8C%97%E4%BA%AC,BJP&ts=%E5%90%88%E8%82%A5,HFH&date=2025-04-12&flag=N,N,Y",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-origin",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.95 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "data": {
+      },
+      "expected_code": 200,
+      "expected_data": {
+        "code": 0,
+        "message": "success"
+      }
+    },
+    {
+      "id": "case_001",
+      "name": "查询车票-成功场景",
+      "interface": "/otn/leftTicket/queryG",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "Accept-Language": "zh-CN,zh;q=0.9",
+        "Cache-Control": "no-cache",
+        "Connection": "keep-alive",
+        "Cookie": "_uab_collina=174369461802026954310813; JSESSIONID=F11C5671B4C0B677E5BCD873C91EF4B4; BIGipServerotn=1574502666.24610.0000; BIGipServerpassport=803733770.50215.0000; guidesStatus=off; highContrastMode=defaltMode; cursorStatus=off; route=6f50b51faa11b987e576cdb301e545c4; _jc_save_fromStation=%u5317%u4EAC%2CBJP; _jc_save_toStation=%u5408%u80A5%2CHFH; _jc_save_fromDate=2025-04-12; _jc_save_toDate=2025-04-03; _jc_save_wfdc_flag=dc",
+        "If-Modified-Since": "0",
+        "Referer": "https://kyfw.12306.cn/otn/leftTicket/init?linktypeid=dc&fs=%E5%8C%97%E4%BA%AC,BJP&ts=%E5%90%88%E8%82%A5,HFH&date=2025-04-12&flag=N,N,Y",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-origin",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.95 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "data": {
+      },
+      "expected_code": 200,
+      "expected_data": {
+        "code": 0,
+        "message": "success"
+      }
+    }
+  ]
+}

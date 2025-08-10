@@ -5,7 +5,7 @@
 @IDE    ：PyCharm
 @Date   ：2023/12/3 10:32
 @Desc   ：
-@Project -> File   ：PythonDemo20231201 -> test
+@Project -> File   ：PythonDemo20231201 -> demo
 =================================================='''
 import tkinter as tk
 from test_cases.case47.TbQuery import get_evaluate

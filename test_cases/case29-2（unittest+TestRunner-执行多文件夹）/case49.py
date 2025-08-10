@@ -2,6 +2,7 @@ import os
 import time
 import unittest
 from unittestreport import TestRunner
+
 '''
 目标2：执行多个文件夹下的不同脚本
 （1）要满足的条件1：要执行的测试用例所在的文件夹中必须包含【__init__.py】
@@ -13,19 +14,21 @@ a、脚本中的类要继承 unittest.TestCase，比如：class TestStringMethod
 b、类中的函数要实例化使用self —— def test_isupper(self):
 '''
 
+
 def creatsuite():
     testunit = unittest.TestSuite()
-    list_dir = os.listdir('D:/Python/PythonDemo20240331/test_cases/case49/tests')
+    list_dir = os.listdir('D:/Python/PythonDemo20240331/test_cases/case49/tests_ini')
 
     for i in list_dir:
-        if os.path.isdir(i):#如果遍历到的i是目录
+        if os.path.isdir(i):  # 如果遍历到的i是目录
             print('目录')
-        else:#如果遍历到的i是文件
-            print('遍历到的是文件:'+str(i))#test1
-            file_path='D:/Python/PythonDemo20240331/test_cases/case49/tests/'
-            case_path=file_path+i
-            print(case_path)#D:/Python/PythonDemo20240315/test_cases/case29-2（unittest+TestRunner-执行多文件夹）/cases/test1
-            discover = unittest.defaultTestLoader.discover(str(case_path), pattern='a*.py', top_level_dir='D:/Python/PythonDemo20240331/test_cases/case49/tests/')
+        else:  # 如果遍历到的i是文件
+            print('遍历到的是文件:' + str(i))  # test1
+            file_path = 'D:/Python/PythonDemo20240331/test_cases/case49/tests_ini/'
+            case_path = file_path + i
+            print(case_path)  # D:/Python/PythonDemo20240315/test_cases/case29-2（unittest+TestRunner-执行多文件夹）/cases/test1
+            discover = unittest.defaultTestLoader.discover(str(case_path), pattern='a*.py',
+                                                           top_level_dir='D:/Python/PythonDemo20240331/test_cases/case49/tests_ini/')
             testunit.addTests(discover)
 
     return testunit

@@ -1,10 +1,8 @@
 # 定义一个 Person 类
 from _pytest import unittest
 
-
-
-
 import unittest
+
 
 class TestStringMethods(unittest.TestCase):
 
@@ -21,6 +19,7 @@ class TestStringMethods(unittest.TestCase):
         # check that s.split fails when the separator is not a string
         with self.assertRaises(TypeError):
             s.split(2)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -25,7 +25,7 @@ from matplotlib import pyplot as plt
 #     return host
 
 
-def get_evaluate(url,header):
+def get_evaluate(url, header):
     url = url
     payload = {}
     headers = {
@@ -130,6 +130,5 @@ def get_evaluate(url,header):
                 plt.show()
 
                 print("图片下载完成2")
-
 
 # get_evaluate()

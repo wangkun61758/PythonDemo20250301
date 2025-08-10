@@ -1,0 +1,9 @@
+import requests
+def test1():
+    cookie_dict = {'PHPSESSID': 'htvoegt7rgb27fadl6d22calic',
+                   'SERVERID': '7349dbf5589746919266ccf2e3cd1162|1680399216|1680399216',
+                   'ingress_user_id': '1680399217.479.24061.806845|d8c6d8cb6c73f72f411c4a27f7a6674a'}
+    a=requests.utils.cookiejar_from_dict(cookie_dict)
+    print(a)
+    b=requests.utils.dict_from_cookiejar(a)
+    print(b)

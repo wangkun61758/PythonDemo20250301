@@ -5,15 +5,19 @@ import pytest
 2、先执行有排序的，执行完所有有排序的，再去执行无排序的函数（所以 @pytest.mark.skip(reason="没有原因的跳过") 在最后面执行）
 3、两个函数排序相同，则在前面的先执行
 '''
-@pytest.mark.skipif(1==2,reason='没有原因的跳过')
+
+
+@pytest.mark.skipif(1 == 2, reason='没有原因的跳过')
 def test1():
     print('打印没有原因的跳过')
+
 
 @pytest.mark.skip(reason='没有原因的跳过')
 def test2():
     print('打印没有原因的跳过')
 
-@pytest.mark.skipif(1==2,reason='没有原因的跳过')
+
+@pytest.mark.skipif(1 == 2, reason='没有原因的跳过')
 class Test():
     @pytest.mark.skipif(1 == 2, reason='没有原因的跳过')
     def test1(self):
@@ -68,31 +72,37 @@ def test():
 def test3():
     print("运行")
 
+
 @pytest.mark.run(order=2)
 def test4():
     print("4")
+
 
 @pytest.mark.run(order=3)
 def test5():
     print("5")
 
+
 @pytest.mark.run(order=6)
 def test6():
     print("6")
+
 
 @pytest.mark.run(order=7)
 def test7():
     print("7")
 
+
 @pytest.mark.run(order=8)
 def test8():
     print('8')
+
 
 @pytest.mark.run(order=9)
 def test9():
     print('9')
 
+
 @pytest.mark.run(order=10)
 def test10():
     print('10')
-

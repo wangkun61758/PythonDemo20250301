@@ -41,7 +41,6 @@ label2.pack()
 entry2 = tk.Entry(window)
 entry2.pack()
 
-
 # 4.1、创建查询按钮
 button = tk.Button(window, text="提交", command=submit2)
 # 4.2、把提交按钮放到窗口上去
